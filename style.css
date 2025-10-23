@@ -1,0 +1,141 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Georgia", serif;
+}
+
+body {
+    background-color: #aab1af;
+    color: #1a1a1a;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 20px;
+    border-bottom: 3px solid #000;
+}
+
+.logo {
+    background-color: #e0e0e0;
+    color: #000;
+    font-weight: bold;
+    padding: 8px 16px;
+    border: 1px solid #000;
+    font-size: 18px;
+}
+
+.title {
+    font-size: 15px;
+    color: #333;
+    margin-left: 10px;
+    flex: 1;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Section */
+main {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.intro h2 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+/* Image Section */
+.image-section {
+    margin-top: 30px;
+}
+
+.image-section img {
+    width: 70%;
+    max-width: 800px;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .title {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    nav {
+        align-self: flex-end;
+        margin-top: 5px;
+    }
+
+    main {
+        padding: 30px 15px;
+    }
+
+    .intro h2 {
+        font-size: 18px;
+    }
+
+    .image-section img {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro h2 {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 5px 12px;
+    }
+
+    .image-section img {
+        width: 95%;
+    }
+}
